@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="geoslab703-md-bt-medium.ttf">
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="D3A-mN-9E6" customClass="NewPlanCollectionViewCell" customModule="_Yet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0j-7A-Z41" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your lunch plan, or join an existing plan." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-Du-fqe">
+                                <rect key="frame" x="18" y="15" width="221" height="36"/>
+                                <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                                <color key="textColor" red="0.98948910359999998" green="0.31725431739999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdF-2Y-KmO">
+                                <rect key="frame" x="251" y="10" width="94" height="42"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.83137254900000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="JyX-4H-DQf"/>
+                                    <constraint firstAttribute="width" constant="94" id="fIf-Ms-CrK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="17"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCreate:" destination="D3A-mN-9E6" eventType="touchUpInside" id="WE3-x2-PS7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MdF-2Y-KmO" secondAttribute="trailing" constant="12" id="6fg-xt-Z3u"/>
+                            <constraint firstItem="uiw-Du-fqe" firstAttribute="top" secondItem="m0j-7A-Z41" secondAttribute="top" constant="15" id="Dvm-S7-iXI"/>
+                            <constraint firstItem="MdF-2Y-KmO" firstAttribute="top" secondItem="m0j-7A-Z41" secondAttribute="top" constant="10" id="O21-nv-7Ee"/>
+                            <constraint firstAttribute="bottom" secondItem="uiw-Du-fqe" secondAttribute="bottom" priority="750" constant="15" id="Pj0-ki-UaS"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MdF-2Y-KmO" secondAttribute="bottom" constant="10" id="dMf-09-zQm"/>
+                            <constraint firstItem="MdF-2Y-KmO" firstAttribute="leading" secondItem="uiw-Du-fqe" secondAttribute="trailing" constant="12" id="gBZ-xU-MVq"/>
+                            <constraint firstItem="uiw-Du-fqe" firstAttribute="leading" secondItem="m0j-7A-Z41" secondAttribute="leading" constant="18" id="riJ-lC-0LE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="m0j-7A-Z41" firstAttribute="leading" secondItem="D3A-mN-9E6" secondAttribute="leading" id="DP6-JU-ERo"/>
+                <constraint firstAttribute="trailing" secondItem="m0j-7A-Z41" secondAttribute="trailing" id="O66-BQ-qjW"/>
+                <constraint firstItem="m0j-7A-Z41" firstAttribute="top" secondItem="D3A-mN-9E6" secondAttribute="top" id="OkY-n5-99N"/>
+                <constraint firstAttribute="bottom" secondItem="m0j-7A-Z41" secondAttribute="bottom" id="xcK-bR-FBA"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="m0j-7A-Z41" id="lSE-K7-4dV"/>
+                <outlet property="createBtn" destination="MdF-2Y-KmO" id="V84-di-SVl"/>
+                <outlet property="createLabel" destination="uiw-Du-fqe" id="vLO-d1-keV"/>
+            </connections>
+            <point key="canvasLocation" x="-80.5" y="140"/>
+        </collectionViewCell>
+    </objects>
+</document>

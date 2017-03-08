@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="geoslab703-md-bt-bold.ttf">
+            <string>GeometricSlab703BT-Bold</string>
+            <string>GeometricSlab703BT-Bold</string>
+        </mutableArray>
+        <mutableArray key="geoslab703-md-bt-medium.ttf">
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+            <string>GeometricSlab703BT-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DraggableCardView" customModule="_Yet" customModuleProvider="target">
+            <connections>
+                <outlet property="bailOutsView" destination="Ng9-SW-IC7" id="kMZ-rG-z2U"/>
+                <outlet property="bottomPanel" destination="0Rl-ol-L6H" id="KVc-Pf-UVH"/>
+                <outlet property="commonFriendsImgs" destination="TTV-kc-h9B" id="dS6-H3-ioz"/>
+                <outlet property="commonFriendsLabel" destination="65t-JU-UMr" id="PYa-So-Zab"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="ZqU-XQ-qyx"/>
+                <outlet property="distanceLabel" destination="t2u-b8-N8M" id="leP-Vj-7LO"/>
+                <outlet property="favoriteFoodView" destination="TP7-jo-Jd6" id="m2e-mI-oJT"/>
+                <outlet property="favoriteTopicsView" destination="vhD-Jb-smp" id="Lk5-Bs-K6M"/>
+                <outlet property="foodLabel" destination="eGL-nI-glX" id="6r8-Ho-7Ol"/>
+                <outlet property="hangOutsView" destination="cuG-Ne-ZlA" id="E85-Hg-iLv"/>
+                <outlet property="meetLabel" destination="lnS-t8-SYt" id="SYk-uF-fUE"/>
+                <outlet property="midPanel" destination="ktV-MR-kAw" id="P5I-7E-kc5"/>
+                <outlet property="numBails" destination="64R-BU-iGR" id="apN-JX-wRu"/>
+                <outlet property="numBailsLabel" destination="qgc-1U-D23" id="xW5-Pr-yvp"/>
+                <outlet property="numMeets" destination="exZ-eD-C17" id="trr-4P-rDx"/>
+                <outlet property="numMeetsLabel" destination="ZRG-qN-eLb" id="nEy-9Z-jNY"/>
+                <outlet property="passLabel" destination="APp-wH-rgo" id="AXU-Dz-exi"/>
+                <outlet property="pinIcon" destination="bAH-Nh-cpB" id="6rR-3H-s8Z"/>
+                <outlet property="profileImage" destination="TRc-aH-g4T" id="pe1-9K-B7R"/>
+                <outlet property="rating" destination="5QP-DL-tfn" id="Y1n-BN-XOI"/>
+                <outlet property="ratingLabel" destination="MNv-LD-2Hn" id="QUn-hg-ZBj"/>
+                <outlet property="ratingView" destination="e0r-t3-5MM" id="dbC-2b-Fe5"/>
+                <outlet property="topPanel" destination="obJ-uj-kXp" id="5le-XM-NAB"/>
+                <outlet property="topicsLabel" destination="IMp-aJ-asb" id="nVN-bs-1nR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="485"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="obJ-uj-kXp" userLabel="topPanel">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TRc-aH-g4T" userLabel="profileImage">
+                            <rect key="frame" x="138" y="30" width="75" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" id="xh3-Xp-Q9h" userLabel="scores">
+                            <rect key="frame" x="0.0" y="142" width="350" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="cuG-Ne-ZlA" userLabel="hangouts">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="exZ-eD-C17">
+                                            <rect key="frame" x="44" y="20" width="29" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                            <color key="textColor" red="0.504616379737854" green="0.51251798868179321" blue="0.52536267042160034" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hang Outs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZRG-qN-eLb">
+                                            <rect key="frame" x="21" y="0.0" width="75" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.58431372550000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="Ng9-SW-IC7" userLabel="bailouts">
+                                    <rect key="frame" x="116" y="0.0" width="115" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="Li6-OW-pdv" userLabel="verticalLine">
+                                            <rect key="frame" x="0.0" y="0.0" width="1" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bail Outs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qgc-1U-D23">
+                                            <rect key="frame" x="26" y="0.0" width="63" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.58431372550000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="64R-BU-iGR">
+                                            <rect key="frame" x="30" y="20" width="55" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.58431372550000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="e0r-t3-5MM" userLabel="rating">
+                                    <rect key="frame" x="231" y="0.0" width="116" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="nV1-M1-jiT" userLabel="verticalLine">
+                                            <rect key="frame" x="0.0" y="0.0" width="1" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MNv-LD-2Hn">
+                                            <rect key="frame" x="35" y="0.0" width="46" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.58431372550000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5QP-DL-tfn">
+                                            <rect key="frame" x="40" y="20" width="37" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                            <color key="textColor" red="0.57647058819999997" green="0.58431372550000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" id="bAH-Nh-cpB">
+                            <rect key="frame" x="119" y="113" width="17" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.0 miles away" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t2u-b8-N8M">
+                            <rect key="frame" x="135" y="113" width="97" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" red="0.57647058823529407" green="0.58431372549019611" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="0Rl-ol-L6H" userLabel="bottomPanel">
+                    <rect key="frame" x="0.0" y="380" width="350" height="105"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="eBj-kl-hhm" userLabel="horizontalLine">
+                            <rect key="frame" x="12" y="0.0" width="326" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="65t-JU-UMr" userLabel="friendsLabel">
+                            <rect key="frame" x="14" y="11" width="117" height="18"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                            <color key="textColor" red="0.57647058823529407" green="0.58431372549019611" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="TTV-kc-h9B" userLabel="friendsImage">
+                            <rect key="frame" x="14" y="36" width="322" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lnS-t8-SYt">
+                    <rect key="frame" x="16" y="56" width="130" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="GeometricSlab703BT-Bold" family="GeoSlab703 Md BT" pointSize="30"/>
+                    <color key="textColor" red="0.89411764705882346" green="0.40000000000000002" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="APp-wH-rgo">
+                    <rect key="frame" x="204" y="56" width="130" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="GeometricSlab703BT-Bold" family="GeoSlab703 Md BT" pointSize="30"/>
+                    <color key="textColor" red="0.9882352941176471" green="0.79607843137254897" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="ktV-MR-kAw" userLabel="midPanel">
+                    <rect key="frame" x="0.0" y="200" width="350" height="180"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="RPj-jl-1Kz" userLabel="horizontalLine">
+                            <rect key="frame" x="12" y="0.0" width="326" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eGL-nI-glX" userLabel="foodLabel">
+                            <rect key="frame" x="14" y="6" width="93" height="18"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                            <color key="textColor" red="0.57647058823529407" green="0.58431372549019611" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Topics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IMp-aJ-asb" userLabel="topicsLabel">
+                            <rect key="frame" x="14" y="92" width="102" height="18"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="GeometricSlab703BT-Medium" family="GeoSlab703 Md BT" pointSize="15"/>
+                            <color key="textColor" red="0.57647058823529407" green="0.58431372549019611" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="TP7-jo-Jd6" userLabel="foodView">
+                            <rect key="frame" x="14" y="30" width="324" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="vhD-Jb-smp" userLabel="topicsView">
+                            <rect key="frame" x="14" y="116" width="324" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="182" y="211.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pin" width="12" height="16"/>
+    </resources>
+</document>
